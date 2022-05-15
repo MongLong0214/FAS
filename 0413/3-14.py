@@ -33,7 +33,7 @@ while True:
     b = result % 10 #6
     c = a + b #8
     cnt += 1
-    result = int(str(result % 10) + str(c % 10))
+    result = int(str(result % 10) + str(c % 10)) # 6 8 = 68
     if x == result:
         break
 print(cnt)
