@@ -10,9 +10,9 @@ for i in range(student):
     for i in scores:
         if i > mean:
             result += 1
-            rate = result / length *100
-    print("%.3f"%rate + "%")
-
+            rate = result / length * 100
+    # print("%.3f"%rate + "%")
+    print(f'{rate:.3f}%')
 
 
 
