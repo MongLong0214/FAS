@@ -1,13 +1,13 @@
 const foo = (str) => {
   const vowels = ["a", "e", "i", "o", "u"];
   const words = str.split("");
-  const result = [];
-  words.forEach((word) => {
+  let result = 0;
+  words.map((word) => {
     if (vowels.includes(word)) {
-      result.push(word);
+      result += 1;
     }
   });
-  return result.join("").length;
+  return result;
 };
 
 console.log(foo("abracadabra"));

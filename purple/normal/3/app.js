@@ -1,17 +1,19 @@
 const foo = (games) => {
-  const win = [];
-  const lose = [];
+  let count = 0;
+
   games.map((item, idx) => {
+    // 이길 경우 3점 추가
     if (item[0] > item[2]) {
-      return win.push(item);
+      return (count += 3);
     }
+    // 비길 경우 1점 추가
     if (item[0] === item[2]) {
-      return lose.push(item);
+      return (count += 1);
     }
   });
-  return win.length * 3 + lose.length;
+  return count;
 };
 
 console.log(
-  foo(["3:1", "2:2", "1:3", "1:1", "0:0", "0:1", "0:2", "0:3", "6:4", "5:5"])
+  foo(["3:1", "2:2", "1:3", "3:1", "2:2", "1:3", "3:1", "2:2", "1:3", "0:4"])
 );

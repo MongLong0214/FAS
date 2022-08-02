@@ -1,5 +1,5 @@
-const foo = (nums) => {
-  const sortArray = nums.sort((a, b) => {
+const foo = (num) => {
+  const sortArray = num.sort((a, b) => {
     return a - b;
   });
   return sortArray[1];

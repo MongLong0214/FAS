@@ -13,7 +13,7 @@ const foo = (ids) => {
     }
   });
 
-  // undefined있으면 몇번째 수인지 반환 undefined없으면 배열 길이 반환
+  // undefined 있으면 몇 번째 인덱스 인지 반환 undefined없으면 배열 길이 반환
   if (c.includes(undefined)) {
     return c.indexOf(undefined);
   } else {
